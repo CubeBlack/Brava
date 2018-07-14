@@ -1,0 +1,140 @@
+
+body {
+  margin: 0;
+  background: black;
+}
+
+/*Menu start*/
+.navbar{
+	background-color: rgba(0, 0, 0, 0.6);
+	overflow:hidden;
+	height: 8vh;
+  width: 100%;
+  position:fixed;
+}
+
+.navbar a{
+	float:left;
+	display:block;
+	color:#f2f2f2;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size:17px;
+}
+
+.navbar ul{
+	margin:8px 0 0 0;
+	list-style:none;
+}
+
+.navbar a:hover{
+	background-color:#ddd;
+	color:#000;
+  border-radius: 3px;
+}
+
+.side-nav{
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:#111;
+	opacity:0.9;
+	overflow-x:hidden;
+	padding-top: 60px;
+	transition:0.5s;
+}
+
+.side-nav a{
+	padding:10px 10px 10px 30px;
+	text-decoration:none;
+	font-size:22px;
+	color:#ccc;
+	display:block;
+	transition:0.3s;
+}
+
+.side-nav a:hover{
+	color:#fff;
+}
+
+.side-nav .btn-close{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+	margin-left:50px;
+}
+
+#main{
+	transition:margin-left 0.5s;
+	padding:20px;
+	overflow:hidden;
+	width:100%;
+}
+
+@media(max-width:768px){
+	.navbar-nav{display:none;}
+}
+
+@media(min-width:768px){
+	/*.open-slide{display:none;}*/
+}
+/*Menu end*/
+
+
+.background-fixed {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+header{
+  background-image:url('../_img/header.jpg');
+}
+
+.aligns-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.black-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.theCompany {
+  height: 50vh;
+  background-color: #a9cf46;
+  color: #fff;
+  font-size: 25px;
+  padding: 2%;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.theCompany h2 {
+  text-align: center;
+}
+
+
+.importExport {
+  background-image:url('../_img/importExport.jpg');
+  font-size: 20px;
+  color: #fff;
+}
+
+.importExport h2{
+  text-align: center;
+}

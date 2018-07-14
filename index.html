@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brava Export</title>
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+		<header class="background-fixed "> <!-- First image/piece of parallax -->
+
+				<!--Menu start-->
+				<nav class="navbar">
+
+					<span class="open-slide">
+						<a href="#" onclick="openSideMenu()">
+							<svg width="30" height="30">
+								<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+								<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+								<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+							</svg>
+						</a>
+					</span>
+						<ul class="navbar-nav">
+							<li><a href="#start">Início</a></li>
+							<li><a href="#theCompany">A Empresa</a></li>
+							<li><a href="#importExport">Exportação/Importação</a></li>
+							<li><a href="#warehousesGeneral">Armazéns Gerais</a></li>
+							<li><a href="#quotes">Cotações</a></li>
+							<li><a href="#contact">Contato</a></li>
+						</ul>
+					</nav>
+
+					<div id="side-menu" class="side-nav">
+						<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+						<a href="#start">Início</a>
+						<a href="#theCompany">A Empresa</a>
+						<a href="#importExport">Exportação/Importação</a>
+						<a href="#warehousesGeneral">Armazéns Gerais</a>
+						<a href="#quotes">Cotações</a>
+						<a href="#contact">Contato</a>
+					</div>
+
+					<script>
+						function openSideMenu(){
+							document.getElementById('side-menu').style.width='250px';
+							document.getElementById('main').style.marginLeft='250px';
+						}
+
+						function closeSlideMenu(){
+							document.getElementById('side-menu').style.width='0px';
+							document.getElementById('main').style.marginLeft='0px';
+						}
+					</script>
+
+				<!--Menu end -->
+				<a name="start"></a>
+
+				<div class="aligns-center black-transparent">
+					<img src="_img/logo-small.png">
+				</div>
+			</header>
+
+			<a name="theCompany"></a>
+			<section class="theCompany">
+				<div>
+					<h2>A Empresa</h2>
+					<p>A BRAVA EXPORT é uma empresa localizada na cidade de Itajaí e que viabiliza as operações em Comércio Exterior, atuando na área de importação e exportação. Proporciona soluções práticas e inovadoras no que se refere às principais atividades de comércio internacional, aplicando as estratégias em todas as negociações junto aos clientes, otimizando a rentabilidade dessas operações. Visa maximizar o lucro através de ações eficazes, desenvolvendo soluções específicas para os negócios, sempre respeitando plenamente as particularidades e culturas existentes de seus clientes.</p>
+			</div>
+			</section>
+
+			<a name="importExport"></a>
+			<section class="importExport background-fixed aligns-center">
+				<div class="black-transparent">
+					<div class="listImport">
+						<ul>
+							<h2>EXPORTAÇÃO</h2>
+							<li>Despacho Aduaneiro e coordenação da liberação da mercadoria perante os órgãos anuentes.</li>
+							<li>Acompanhamento através do serviço door-to-door (porta-a-porta).</li>
+							<li>Coordenação de transporte nacional e internacional.</li>
+							<li>Monitoramento de embarques marítimos, aéreos e rodoviários.</li>
+							<li>Assessoria na exportação através da confecção de documentação</br> (Fatura Comercial, Packing List,  Certificados de Origem, Certificado de Expurgo, Fitossanitários e análise de carta de crédito.)</li>
+							<li>Follow-up: informações diárias ao cliente sobre o status do seu processo.</li>
+							<li>Logística especializada no acompanhamento da carga desde a chegada até o embarque da mesma.</li>
+						</ul>
+					</div>
+					<div class="listExport">
+						<ul>
+							<h2>IMPORTAÇÃO</h2>
+							<li>Emissão e solicitação de licença de importação junto aos órgãos anuentes.</li>
+							<li>Habilitação no SISCOMEX/Radar – Pessoa Física e Jurídica.</li>
+							<li>Classificação fiscal de mercadorias.</li>
+							<li>Monitoramento de chegada das cargas em portos e aeroportos.</li>
+							<li>Elaboração e registro de declaração de importação.</li>
+							<li>Acompanhamento e registro nos sistemas AFRMM, ANVISA, MAPA, Terminais/Recintos Alfandegados.</li>
+							<li>Pagamento ou exoneração do ICMS.</li>
+							<li>Gestão de contas(pagamentos, cotações e conferência: tributos, armadores/agências, terminais, entre outros).</li>
+							<li>Acompanhamento do desembaraço aduaneiro nos recintos em qualquer regime aduaneiro e benefícios fiscais.</li>
+							<li>Processo de carregamento da mercadoria (transporte interno).</li>
+							<li>Acompanhamento e entrega da mercadoria na empresa do cliente.</li>
+						</ul>
+				</div>
+				</div>
+			</section>
+
+
+</body>
+</html>

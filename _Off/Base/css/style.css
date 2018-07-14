@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color:#f4f4f4;
+}
+
+.main-cogitari {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  color: rgba(255, 255, 255, 1);
+  background-image:url('../img/first-image.jpeg');
+}
+
+.main-title {
+  font-size: 5.5em;
+  margin-bottom: 0.4em;
+}
+
+.main-quote {
+  font-size: 1.8em;
+}
+
+.first-quote {
+  height: 50vh;
+  background-image:url('../img/quote1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.second-quote {
+  height: 50vh;
+  background-image:url('../img/quote2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.ourTarget {
+  height: 100vh;
+  background-image:url('../img/second-image.jpeg');
+  color: rgba(255, 255, 255, 1);
+}
+
+.ourTarget h2, .contact-with-us h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.ourTarget p, .contact-with-us p {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+}
+
+.box-black {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1%;
+  height: 98vh;
+  width: 98vw;
+  padding: 0 5% 0 5%;
+}
+
+/*Setup align*/ /*Ao por Embaixo de Products toda a grid de products saiu*/
+.align-center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.products {
+  height: 100vh;
+  background-color: rgba(0, 0, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.4em;
+  display: grid;
+  grid-template-areas: "find-your-plan find-your-plan find-your-plan"
+                        "product-1 product-2 product-3"
+                        "product-4 product-4 product-4";
+  grid-column-gap: 1%;
+}
+
+    .find-your-plan {
+      background-color: rgba(0, 0, 0, 0.3);
+      grid-area: find-your-plan;
+      height: 6vh;
+    }
+
+    .product-1 {
+      background-color: rgba(0, 0, 0, 0.3);
+      grid-area: product-1;
+      height: 70vh;
+      padding: 1%;
+    }
+
+    .product-2 {
+      background-color: rgba(0, 0, 0, 0.3);
+      grid-area: product-2;
+      height: 70vh;
+      padding: 1%;
+    }
+
+    .product-3 {
+      background-color: rgba(0, 0, 0, 0.3);
+      grid-area: product-3;
+      height: 70vh;
+      padding: 1%;
+    }
+
+    .product-4 {
+      background-color: rgba(0, 0, 0, 0.3);
+      grid-area: product-4;
+      height: 20vh;
+    }
+
+.contact-with-us {
+  height: 100vh;
+  background-image:url('../img/third-image.jpg');
+  color: rgba(255, 255, 255, 1);
+}
+
+/* setup quotes and author*/
+
+.quote {
+  font-size: 2.3em;
+  font-style: italic;
+}
+
+.author {
+  display: flex;
+  font-size: 1.2em;
+  font-style: italic;
+  float: right;
+  margin-right: 3%;
+}
+
+.quote_margin {
+  margin: 10%;
+}
+
+
+
+/* Parallax */
+.main-cogitari, .ourTarget, .contact-with-us {
+  position: relative;
+  background-attachment: fixed;
+  background-position:center;
+  background-size:cover;
+}
+
+/* configurando footer*/
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 1);
+  bottom: 0;
+  position: fixed;
+}
+
+@media (max-width:768px) {
+  .quote {
+    font-size: 1.6em;
+  }
+  .author {
+    font-size: 1em;
+  }
+
+  .main-title {
+    font-size: 4.7em;
+  }
+  .main-quote {
+    font-size: 1.2em;
+  }
+
+  .ourTarget h2, .contact-with-us h2 {
+    font-size: 1.6em;
+  }
+
+  .ourTarget p, .contact-with-us p {
+    font-size: .8em;
+  }
+
+}
