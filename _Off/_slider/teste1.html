@@ -1,0 +1,88 @@
+	<section id="photoGallery" class="middleSection aligns-center">
+		<div>
+			<div class="divSlider">
+				<ul class="ulSlider">
+				<li>
+				     <input type="radio" id="slide1" name="slide" checked>
+				     <label for="slide1"></label>
+				     <img src="1.jpg" />
+				</li>
+				<li>
+				     <input type="radio" id="slide2" name="slide">
+				     <label for="slide2"></label>
+				     <img src="2.jpg" />
+				</li>
+				<li>
+				    <input type="radio" id="slide3" name="slide">
+				    <label for="slide3"></label>
+				    <img src="3.jpg" />
+				</li>
+				  <li>
+				    <input type="radio" id="slide4" name="slide">
+				    <label for="slide4"></label>
+				    <img src="4.jpg" />
+				</li>
+				  <li>
+				    <input type="radio" id="slide5" name="slide">
+				    <label for="slide5"></label>
+				    <img src="5.jpg" />
+				</li>
+				  <li>
+				    <input type="radio" id="slide6" name="slide">
+				    <label for="slide6"></label>
+				    <img src="6.jpg" />
+				</li>
+				</ul>
+			</div>
+		</div>
+</section>
+
+
+
+
+<style>
+.divSlider {
+  width: 85vw;
+  height: 45vh;
+  background-color: gray;
+  margin: 0 1% 0 1%;
+  padding: 1%;
+}
+.ulSlider {
+  margin: 0;
+  background-color:pink;
+}
+.ulSlider li{
+  position: absolute;
+  height: 45vh;
+  list-style: none;
+  display: inline-block;
+}
+
+.ulSlider label {
+  display: block;
+  cursor: pointer;
+  background-color: #3a3b7b;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+.ulSlider label:hover {
+  background-color: #a9cf46;
+}
+
+.ulSlider input {
+  display: none;
+}
+
+.ulSlider img {
+  visibility: hidden;
+}
+
+.ulSlider li input:checked {
+  visibility: visible;
+}
+</style>

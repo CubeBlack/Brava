@@ -2,30 +2,41 @@
      <li>
            <input type="radio" id="slide1" name="slide" checked>
            <label for="slide1"></label>
-           <img src="1.png" />
+           <img src="1.jpg" />
      </li>
      <li>
            <input type="radio" id="slide2" name="slide">
            <label for="slide2"></label>
-           <img src="2.png" />
+           <img src="2.jpg" />
      </li>
      <li>
           <input type="radio" id="slide3" name="slide">
           <label for="slide3"></label>
-          <img src="3.png" />
+          <img src="3.jpg" />
+     </li>
+	      <li>
+          <input type="radio" id="slide4" name="slide">
+          <label for="slide4"></label>
+          <img src="4.jpg" />
+     </li>
+	      <li>
+          <input type="radio" id="slide5" name="slide">
+          <label for="slide5"></label>
+          <img src="4.jpg" />
+     </li>
+	      <li>
+          <input type="radio" id="slide6" name="slide">
+          <label for="slide6"></label>
+          <img src="6.jpg" />
      </li>
 </ul>
 
 
 <style>
-
-* { margin: 0; padding: 0; }
-
-
  .slider {
      display: block;
-     height: 293px;
-     width: 600px;
+     height: 70vh;
+     width: 95vw;
      margin: auto;
      margin-top: 20px;
      position: relative;
@@ -48,7 +59,7 @@
 }
 
 .slider label {
-     background-color: #000;
+     background-color: #fff;
      bottom: 10px;
      cursor: pointer;
      display: block;
@@ -57,7 +68,6 @@
      width: 10px;
      z-index: 10;
  }
-
  .slider li:nth-child(1) label {
      left: 10px;
  }
@@ -69,9 +79,17 @@
  .slider li:nth-child(3) label {
      left: 70px;
  }
+ .slider li:nth-child(4) label {
+     left: 100px;
+ }
+ .slider li:nth-child(5) label {
+     left: 130px;
+ }
+ .slider li:nth-child(6) label {
+     left: 160px;
+ }
  
 .slider img {
-     opacity: 0;
      visibility: hidden;
  }
 
@@ -82,96 +100,6 @@
  }
 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://codepen.io/nucliweb/pen/ymedj
-
-<div>
-
-<p class="item-1">This is your last chance. After this, there is no turning back.</p>
-
-<p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
-
-<p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
-</div>
-
-
-<style>
-
-div {
-	height: 300px;
-	weight: 300px;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-
-body { 
-  font-family: 'Open Sans', 'sans-serif';
-  color: #cecece;
-  background: #222;
-  overflow: hidden;
-}
-
-.item-1, 
-.item-2, 
-.item-3 {
-	position: absolute;
-  display: block;
-	top: 2em;
-  
-  width: 60%;
-  
-  font-size: 2em;
-
-	animation-duration: 20s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
-
-.item-1{
-	animation-name: anim-1;
-}
-
-.item-2{
-	animation-name: anim-2;
-}
-
-.item-3{
-	animation-name: anim-3;
-}
-
-@keyframes anim-1 {
-	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 25%; opacity: 1; }
-  33.33%, 100% { left: 110%; opacity: 0; }
-}
-
-@keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
-  41.63%, 58.29% { left: 25%; opacity: 1; }
-  66.66%, 100% { left: 110%; opacity: 0; }
-}
-
-@keyframes anim-3 {
-	0%, 66.66% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 25%; opacity: 1; }
-  100% { left: 110%; opacity: 0; }
-}
-
-
-<\style>
-
 
 
 

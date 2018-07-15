@@ -1,39 +1,44 @@
 
 body {
-  margin: 0;
-  background: black;
+  margin:0;
+  background:gray;
 }
-
+.scrolling-box {
+  overflow-y:scroll;
+  scroll-behavior:smooth;
+  width:100vw;
+  height:100vh;
+  padding:0;
+  }
 /*Menu start*/
 .navbar{
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color:rgba(0, 0, 0, .7);
 	overflow:hidden;
-	height: 8vh;
-  width: 100%;
+	height:8vh;
+  width:100%;
   position:fixed;
+  z-index:1;
 }
-
 .navbar a{
 	float:left;
 	display:block;
 	color:#f2f2f2;
 	text-align:center;
-	padding: 14px 16px;
+	padding:14px 16px;
 	text-decoration:none;
 	font-size:17px;
+  margin-bottom:2%;
 }
-
 .navbar ul{
 	margin:8px 0 0 0;
 	list-style:none;
 }
-
 .navbar a:hover{
 	background-color:#ddd;
 	color:#000;
-  border-radius: 3px;
+  border-radius:3px;
+  font-weight:bolder;
 }
-
 .side-nav{
 	height:100%;
 	width:0;
@@ -44,10 +49,9 @@ body {
 	background-color:#111;
 	opacity:0.9;
 	overflow-x:hidden;
-	padding-top: 60px;
+	padding-top:60px;
 	transition:0.5s;
 }
-
 .side-nav a{
 	padding:10px 10px 10px 30px;
 	text-decoration:none;
@@ -56,11 +60,16 @@ body {
 	display:block;
 	transition:0.3s;
 }
-
 .side-nav a:hover{
 	color:#fff;
+  font-weight: bolder;
 }
-
+.red-emphasis {
+  color:#a23b56;
+}
+.red-emphasis a:hover {
+  font-weight:bolder;
+}
 .side-nav .btn-close{
 	position:absolute;
 	top:0;
@@ -68,7 +77,6 @@ body {
 	font-size:36px;
 	margin-left:50px;
 }
-
 #main{
 	transition:margin-left 0.5s;
 	padding:20px;
@@ -84,57 +92,89 @@ body {
 	/*.open-slide{display:none;}*/
 }
 /*Menu end*/
-
-
-.background-fixed {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+/*Estilizações Gerais start*/
+.center{
+  text-align:center;
 }
-
-header{
+/*section 100vh start*/
+.black-transparent {
+  background-color:rgba(0, 0, 0, 0.5);
+  height:100%;
+  width:100%;
+}
+.background-fixed {
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+  height:100vh;
+}
+.aligns-center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+/*section 100vh end*/
+/*section 50vh start*/
+.middleSection {
+  height:50vh;
+  padding:0 10% 0 10%;
+  color:#fff;
+  font-size:25px;
+  border-top:5px solid #fff;
+  border-bottom:5px solid #fff;
+  text-align:justify;
+}
+/*section 50vh end*/
+/*Estilizações Gerais end*/
+#start{
   background-image:url('../_img/header.jpg');
 }
-
-.aligns-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.black-transparent {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-.theCompany {
-  height: 50vh;
-  background-color: #a9cf46;
-  color: #fff;
-  font-size: 25px;
-  padding: 2%;
-  text-align: justify;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-}
-
-.theCompany h2 {
-  text-align: center;
-}
-
-
-.importExport {
+#importExport {
   background-image:url('../_img/importExport.jpg');
-  font-size: 20px;
-  color: #fff;
 }
-
-.importExport h2{
-  text-align: center;
+#gridImportExport {
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-column-gap:4%;
+  font-size:20px;
+  color:#fff;
+  padding-left:3%;
+  padding-right:3%;
+}
+#gridImportExport ul{
+  text-align: justify;
+}
+#gridImportExport div {
+  background-color:rgba(0, 0, 0, 0.8);
+  height:75%;
+  padding-right:3%;
+  border-radius:2%;
+}
+#theCompany {
+  background-color:#a9cf46;
+}
+#warehousesGeneral {
+  background-color:#3a3b7b;
+}
+#photoGallery {
+  background-image:url('../_img/photoGallery.jpg');
+  height:70vh;
+  border:none;
+}
+#quote {
+  background-color:#a9cf46;
+  height: 70vh;
+}
+#contact {
+  background-image:url('../_img/header.jpg');
+  text-align:center;
+  color:#fff;
+  font-size:20px;
+}
+#contactBorder {
+  border:2px solid #fff;
+  border-radius:50px;
+  border-left:hidden;
+  border-right:hidden;
+  padding:5%;
 }
