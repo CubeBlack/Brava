@@ -1,6 +1,7 @@
 body {
   margin:0;
   background:gray;
+  display: flex;
 }
 .scrolling-box {
   overflow-y:scroll;
@@ -152,6 +153,27 @@ body {
 }
 #theCompany {
   background-color:#a9cf46;
+  padding:0;
+}
+#theCompany .panel {
+  /*overflow:hidden;*/
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling:touch;
+}
+#theCompany .contentCompany {
+  width: 300%;
+  display: flex;
+  flex-direction: row;
+}
+#theCompany .view {
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#theCompany span {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 #warehousesGeneral {
   background-color:#3a3b7b;

@@ -1,0 +1,55 @@
+<style>
+body{
+    display:flex;
+
+}
+
+.panel{
+  color:white;
+  overflow:hidden;
+  /* overflow-x:auto; */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling:touch;
+}
+.caixacom3{
+  width: 300%;
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  background-color:DodgerBlue;
+  color: white;
+  text-transform:uppercase;
+}
+a {color: white; text-transform:uppercase;}
+
+.caixapequena{
+  flex:1;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+</style>
+    <div class="panel" id="about">
+      <div class="caixacom3">
+        <div class="caixapequena" id="about/a">
+          <span><h1>Empresa</h1>
+            <p>A BRAVA EXPORT é uma empresa localizada na cidade de Itajaí e que viabiliza as operações em Comércio Exterior, atuando na área de importação e exportação. Proporciona soluções práticas e inovadoras no que se refere às principais atividades de comércio internacional, aplicando as estratégias em todas as negociações junto aos clientes, otimizando a rentabilidade dessas operações. Visa maximizar o lucro através de ações eficazes, desenvolvendo soluções específicas para os negócios, sempre respeitando plenamente as particularidades e culturas existentes de seus clientes.</p>
+          </span>
+
+            <a href="#about/b">Next</a>
+        </div>
+        <div class="caixapequena" id="about/b">
+          <span><a href="#about/a">Prev</a></span><h1>About B</h1><span>
+
+
+            <a href="#about/c">Next</a></span>
+        </div>
+        <div class="caixapequena" id="about/c">
+          <span><a href="#about/b">Prev</a></span><h1>About C</h1>
+
+
+          <span></span>
+        </div>
+      </div>
+    </div>
