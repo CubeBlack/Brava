@@ -2,20 +2,13 @@
 <html>
 <head>
 	<script>
-		function openSideMenu(){
-			document.getElementById('side-menu').style.width='250px';
-			document.getElementById('main').style.marginLeft='250px';
-		}
-		function closeSlideMenu(){
-			document.getElementById('side-menu').style.width='0px';
-			document.getElementById('main').style.marginLeft='0px';
-		}
+
 	</script>
 	<meta charset="utf-8">
 	<title>Brava Export</title>
 	<link rel="stylesheet" type="text/css" href="_css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="__jquery\menuside.js"></script>
+	<script type="text/javascript" src="_js/js.js"></script>
 </head>
 <body>
 	<!--Menu start-->
@@ -34,7 +27,7 @@
 				<li><a href="#theCompany">A Empresa</a></li>
 				<li><a href="#importExport"><span class="red-emphasis">Ex</span> e <span class="red-emphasis">Im</span>portação</a></li>
 				<li><a href="#warehousesGeneral">Armazéns Gerais</a></li>
-				<li><a href="#quotes">Cotações</a></li>
+				<li><a href="#quote">Cotações</a></li>
 				<li><a href="#contact">Contato</a></li>
 			</ul>
 		</nav>
@@ -44,7 +37,7 @@
 			<a href="#theCompany" onclick="closeSlideMenu()">A Empresa</a>
 			<a href="#importExport" onclick="closeSlideMenu()"><span class="red-emphasis">Ex</span> e <span class="red-emphasis" onclick="closeSlideMenu()">Im</span>portação</a>
 			<a href="#warehousesGeneral" onclick="closeSlideMenu()">Armazéns Gerais</a>
-			<a href="#quotes" onclick="closeSlideMenu()">Cotações</a>
+			<a href="#quote" onclick="closeSlideMenu()">Cotações</a>
 			<a href="#contact" onclick="closeSlideMenu()">Contato</a>
 		</div>
 		<!--Menu end -->
@@ -53,7 +46,8 @@
 	<header id="start" class="background-fixed ">
 		<a name="start"></a>
 		<div class="aligns-center black-transparent">
-			<img src="_img/logo-small.png">
+			<img src="_img/logo460x135.png">
+			<!--<div class="logo"></div>-->
 		</div>
 	</header>
 	<!--Inicio end -->
@@ -119,18 +113,20 @@
 </section>
 	<!--Galeria de Fotos end-->
 	<!--Cotação start-->
-	<a name="quotes"></a>
+	<a name="quote"></a>
 	<section id="quote" class="middleSection aligns-center">
 		<div>
-			<fieldset>
+			<fieldset class="aligns-center">
 				<legend>Solicite sua cotação</legend>
-			<form class="" action="" method="post">
-				<input type="text" name="" placeholder="Nome da Empresa" size="50"></br>
-				<input type="text" name="" placeholder="Contato" size="50"></br>
-				<input type="email" name="" placeholder="fulanodetal@exemplo.com" size="50"></br>
-				<input type="tel" name="" placeholder="(11) 9 1111-1111" size="50"></br>
-				<textarea name="describeService" placeholder="Descrição do serviço" rows="8" cols="46"></textarea></br>
+			<form nome="quotes" class="aligns-center" action="" method="post">
+				<div>
+				<input type="text" name="nameCompany" placeholder="Nome da Empresa"></br>
+				<input type="text" name="contact" placeholder="Contato"></br>
+				<input type="email" name="email" placeholder="fulanodetal@exemplo.com"></br>
+				<input type="tel" name="tel" maxlength="15" placeholder="(11) 9 1111-1111" ></br>
+				<textarea name="describeService" placeholder="Descrição do serviço"></textarea></br>
 				<input type="submit" name="" value="Solicitar">
+			</div>
 			</form>
 		</fieldset>
 		</div>
